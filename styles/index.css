@@ -1,0 +1,24 @@
+.menus ul{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menus ul li {
+    display: inline-block;
+    margin: 30px;
+    
+}
+
+.menusInferior ul{
+    list-style: none;
+}
+
+.menusInferior ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.fotinha {
+    max-width: 50px;
+    min-width: 50px;
+}
