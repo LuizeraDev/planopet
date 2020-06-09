@@ -1,3 +1,12 @@
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuSup {
+    background-color: rgb(73, 184, 63);
+}
+
 .menus ul{
     list-style: none;
     margin-right: 30px;
@@ -6,7 +15,12 @@
 .menus ul li {
     display: inline-block;
     margin: 30px;
-    
+    height: 40px;
+    width: 80px;    
+}
+
+.menus ul li:hover {
+    background-color: rgba(0, 0, 0, 0.219);
 }
 
 .menusInferior ul{
@@ -21,4 +35,19 @@
 .fotinha {
     max-width: 50px;
     min-width: 50px;
+}
+
+.form-title {
+    color: aliceblue;
+}
+
+.campos {
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.botao-cadastro {
+    width: 200px;
 }
