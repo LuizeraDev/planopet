@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems, {height: 500});
+    var instances = M.Slider.init(elems, {height: 800, indicators: false});
 });
