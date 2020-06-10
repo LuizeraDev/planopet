@@ -21,6 +21,16 @@ body {
     margin-top: -5px;
 }
 
+#logo2 {
+    max-width: 75px;
+    transition-duration: 0.5s;
+    margin-top: -10px;
+}
+
+.menuMobile {
+    background-color: rgba(27, 73, 21, 0.808);
+}
+
 
 .menus ul li {
     display: inline-block;
