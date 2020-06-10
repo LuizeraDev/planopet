@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import JqueryMask-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon">
+
+    <title>Plano Pet - Entrar</title>
+</head>
+
+<body>
+
+    <div class="login-page">
+        <img id="logo" src="../images/logo1.png" alt="Logo">
+        <div class="form">
+            <!-- Cadastro -->
+            <form class="register-form">
+            <h5>Cadastro</h5>
+            <input type="text" placeholder="Nome"/>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Senha"/>
+            <input type="password" placeholder="Confirmar Senha"/>
+            <input type="text" class="form-control" placeholder="Data de Nascimento" onkeypress="$(this).mask('00/00/0000')">
+            <input type="text" class="form-control" placeholder="CEP Ex.: 00000-000" onkeypress="$(this).mask('00000-000')">
+
+
+            <p>
+            <label>
+                <input class="with-gap" type="radio" name="group" value="1">
+                <span>Convênio Pet&nbsp;&nbsp;</span>
+            </label>
+            <label>
+                <input class="with-gap" type="radio" name="group" value="2">
+                <span>Clínica</span>
+            </label>
+            </p>
+
+            <button><b>Criar Conta</b></button>
+            <p class="message">Já é registrado? <a href="#">Entre aqui.</a></p>
+            </form>
+            <!-- Fim Cadastro -->
+            <!-- Login -->
+            <form class="login-form">
+            <h5>Login</h5>
+            <input type="email" placeholder="Email"/>
+            <input type="password" placeholder="Senha"/>
+
+            <p>
+            <label>
+                <input class="with-gap" type="radio" name="group" value="1">
+                <span>Convênio Pet&nbsp;&nbsp;</span>
+            </label>
+            <label>
+                <input class="with-gap" type="radio" name="group" value="2">
+                <span>Clínica</span>
+            </label>
+            </p>
+
+            <button><b>Entrar</b></button>
+            <p class="message">Não fez cadastro? <a href="#">Crie uma conta.</a></p>
+            <p class="message">Voltar ao Início? <a href="../index.html">Clique aqui.</a></p>
+            </form>
+            <!-- Fim Login-->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>
