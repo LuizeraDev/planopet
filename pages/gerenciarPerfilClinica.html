@@ -34,9 +34,10 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li onclick="setTela(1)"><a>Dados da Clinica</a></li>
-        <li onclick="setTela(2)"><a>Planos Atendidos</a></li>
-        <li onclick="setTela(3)"><a>Opções Avançadas</a></li>
+        <li class="center"><img src="./../images/profile1.png" alt="" style="max-width: 150px;"></li>
+        <li id="mobileDados" onclick="setTela(1)" class="light-green darken-4 white-text ativo"><a class="white-text">Dados da Clinica</a></li>
+        <li id="mobilePlanos" onclick="setTela(2)"><a>Planos Atendidos</a></li>
+        <li id="mobileOpcoes" onclick="setTela(3)"><a>Opções Avançadas</a></li>
         <li>
             <hr>
         </li>
@@ -46,7 +47,7 @@
     </ul>
 
     <div class="row">
-        <div class="col m2">
+        <div class="col m2 hide-on-med-and-down">
             <div class="row">
                 <div class="sideBar">
                     <br><br>
@@ -68,14 +69,14 @@
         </div>
 
 
-        <div class="col m10">
+        <div class="col m10 s12">
             <div id="dados">
                 <div class="row">
                     <h4> &nbsp; Dados da Clínica</h4>
                     <hr>
                 </div>
                 <div class="row content">
-                    <div class="col s6">
+                    <div class="col m6 s12">
                         <p>
                             <a class="btn light-green darken-4"><i class="material-icons">edit</i></a> Nome da clínica:
                             <b>Pet House</b>
@@ -88,12 +89,8 @@
                             <a class="btn light-green darken-4"><i class="material-icons">edit</i></a> Bairro:
                             <b>Gatuno</b>
                         </p>
-                        <br><br>
-                        <button class="btn light-green darken-4">
-                            Alterar foto
-                        </button>
                     </div>
-                    <div class="col s6">
+                    <div class="col m6 s12">
                         <p>
                             <a class="btn light-green darken-4"><i class="material-icons">edit</i></a> Razão Social:
                             <b>Petino house Ltda.</b>
@@ -105,6 +102,13 @@
                             <a class="btn light-green darken-4"><i class="material-icons">edit</i></a> CEP:
                             <b>11705-570</b>
                         </p>
+                    </div>
+                    <div class="col m12">
+                        
+                        <br><br>
+                        <button class="btn light-green darken-4">
+                            Alterar foto
+                        </button>
                     </div>
                 </div>
             </div>
@@ -192,20 +196,20 @@
                     <div class="col m12 center-align">
                         <br><br><br><br>
                         <div class="row">
-                            <div class="col m4">
+                            <div class="col m4 s12">
                                 <div class="dashboard center hoverable modal-trigger" href="#alteraLogin">
                                     <h5>Alterar Email</h5>
                                 </div>
                             </div>
     
-                            <div class="col m4">
+                            <div class="col m4 s12">
                                 <div class="dashboard center hoverable modal-trigger" href="#alteraSenha">
                                     <h5>Alterar Senha</h5>
     
                                 </div>
                             </div>
     
-                            <div class="col m4">
+                            <div class="col m4 s12">
                                 <div class="dashboard center hoverable modal-trigger" href="#apagaConta">
                                     <h5>Apagar Conta</h5>
                                 </div>

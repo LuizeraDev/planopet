@@ -24,3 +24,23 @@ body {
     border-radius: 5px;
     padding-top: 10px;
 }
+
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        margin-top: 20px;
+        width: 70vw;
+        height: 15vh;
+        background-color: rgb(216, 216, 216); 
+        border-radius: 5px;
+        padding-top: 10px;
+    }
+
+    body {
+        overflow-y: auto;
+    }
+}
+
+.ativo>a {
+    color: white;
+}
