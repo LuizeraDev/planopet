@@ -4,4 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems);
+
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+
+    closeChat();
 });
+
+function openChat() {
+    $("#chat").show();
+}
+
+function closeChat() {
+    $("#chat").hide();
+}
+

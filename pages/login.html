@@ -28,50 +28,52 @@
         <div class="form">
             <!-- Cadastro -->
             <form class="register-form">
-            <h5>Cadastro</h5>
-            <input type="text" placeholder="Nome"/>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Senha"/>
-            <input type="password" placeholder="Confirmar Senha"/>
-            <input type="text" class="form-control" placeholder="Data de Nascimento" onkeypress="$(this).mask('00/00/0000')">
-            <input type="text" class="form-control" placeholder="CEP Ex.: 00000-000" onkeypress="$(this).mask('00000-000')">
+                <h5>Cadastro</h5>
+                <input type="text" placeholder="Nome" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <input type="password" placeholder="Confirmar Senha" />
+                <input type="text" class="form-control" placeholder="Data de Nascimento"
+                    onkeypress="$(this).mask('00/00/0000')">
+                <input type="text" class="form-control" placeholder="CEP Ex.: 00000-000"
+                    onkeypress="$(this).mask('00000-000')">
 
 
-            <p>
-            <label>
-                <input class="with-gap" type="radio" name="group" value="1">
-                <span>Convênio Pet&nbsp;&nbsp;</span>
-            </label>
-            <label>
-                <input class="with-gap" type="radio" name="group" value="2">
-                <span>Clínica</span>
-            </label>
-            </p>
+                <p>
+                    <label>
+                        <input class="with-gap" type="radio" name="group" value="1">
+                        <span>Convênio Pet&nbsp;&nbsp;</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" type="radio" name="group" value="2">
+                        <span>Clínica</span>
+                    </label>
+                </p>
 
-            <button><b>Criar Conta</b></button>
-            <p class="message">Já é registrado? <a href="#">Entre aqui.</a></p>
+                <button onclick="login()"><b>Criar Conta</b></button>
+                <p class="message">Já é registrado? <a href="#">Entre aqui.</a></p>
             </form>
             <!-- Fim Cadastro -->
             <!-- Login -->
             <form class="login-form">
-            <h5>Login</h5>
-            <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Senha"/>
+                <h5>Login</h5>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
 
-            <p>
-            <label>
-                <input class="with-gap" type="radio" name="group" value="1">
-                <span>Convênio Pet&nbsp;&nbsp;</span>
-            </label>
-            <label>
-                <input class="with-gap" type="radio" name="group" value="2">
-                <span>Clínica</span>
-            </label>
-            </p>
+                <p>
+                    <label>
+                        <input class="with-gap" type="radio" name="group" value="1">
+                        <span>Convênio Pet&nbsp;&nbsp;</span>
+                    </label>
+                    <label>
+                        <input class="with-gap" type="radio" name="group" value="2">
+                        <span>Clínica</span>
+                    </label>
+                </p>
 
-            <button><b>Entrar</b></button>
-            <p class="message">Não fez cadastro? <a href="#">Crie uma conta.</a></p>
-            <p class="message">Voltar ao Início? <a href="../index.html">Clique aqui.</a></p>
+                <button onclick="login()"><b>Entrar</b></button>
+                <p class="message">Não fez cadastro? <a href="#">Crie uma conta.</a></p>
+                <p class="message">Voltar ao Início? <a href="../index.html">Clique aqui.</a></p>
             </form>
             <!-- Fim Login-->
         </div>

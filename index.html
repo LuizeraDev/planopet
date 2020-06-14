@@ -26,18 +26,128 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="pages/login.html">Entrar</a></li>
-                <li><a href="badges.html">Afiliados</a></li>
-                <li><a href="collapsible.html">Sac</a></li>
-                <li><a href="mobile.html">Promoções</a></li>
+                <li><a href="#modalAfiliados" class="modal-trigger">Parceiros</a></li>
+                <li><a href="pages/chat.html">Sac</a></li>
             </ul>
         </div>
     </nav>
 
+    <div id="chat" class="chat z-depth-2 hide-on-med-and-down">
+        <div class="barraSupChat">
+            <div class="row">
+                <div class="col s1">
+                    <div class="online">
+
+                    </div>
+                </div>
+                <div class="col s9">
+                    PlanoPet
+                </div>
+                <div class="col s2 right">
+                    <a onclick="closeChat()"><i class="material-icons white-text">close</i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="contentChat">
+            <ul>
+                <li class="message messagePlanoPet"><b>PlanoPet</b> <br> Olá, como podemos ajudar?</li>
+            </ul>
+        </div>
+        <div class="toolsChat">
+            <div class="row">
+                <div class="col s9">
+                    <input type="text" class="browser-default sendMessage" >
+                </div>
+                <div class="col s3">
+                    <button class="btn white btn-floating"><i class="material-icons black-text" style="margin-left: 2px;">send</i></button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modalAfiliados" class="modal">
+    <div class="modal-content">
+      <h4>Conheça nossos parceiros</h4>
+      <div class="row">
+          <div class="col s12 m4">
+              <img src="./images/afiliados1.png" alt="" class="responsive-img" style="max-width: 200px;">
+          </div>
+          <div class="col s12 m8">
+              <h4>Hometown Pets</h4>
+              <h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non expedita, labore id voluptatibus placeat minima quas aperiam voluptate error iste vitae iusto accusantium molestias consectetur at dolor, fuga culpa?
+              </h5>            
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m4">
+            <img src="./images/afiliados2.png" alt="" class="responsive-img" style="max-width: 200px;">
+        </div>
+        <div class="col s12 m8">
+            <h4>Harmony Care</h4>
+            <h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non expedita, labore id voluptatibus placeat minima quas aperiam voluptate error iste vitae iusto accusantium molestias consectetur at dolor, fuga culpa?
+            </h5>            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m4">
+            <img src="./images/afiliados4.png" alt="" class="responsive-img" style="max-width: 200px;">
+        </div>
+        <div class="col s12 m8">
+            <h4>Pet Care</h4>
+            <h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non expedita, labore id voluptatibus placeat minima quas aperiam voluptate error iste vitae iusto accusantium molestias consectetur at dolor, fuga culpa?
+            </h5>            
+        </div>
+    </div>
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+  <div id="modalTrabalheConosco" class="modal">
+    <div class="modal-content">
+      <h4>trabalhe Conosco</h4>
+      <div class="row">
+          <div class="col s12 m6">
+              <img src="./images/undraw_job.svg" alt="" style="max-width: 400px;">
+          </div>
+          <div class="col s12 m6">
+              <h5>Nós estamos constantemente procurando pessoas que queiram trabalhar conosco. Por isso, seu currículo será muito bem vindo! Envie ele para nossa plataforma e quando surgir uma oportunidade entraremos em contato.</h5>
+              <br><br>
+              <form action="#">
+                <div class="file-field input-field">
+                  <div class="btn green">
+                    <span>Anexe seu curriculo</span> <br>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                  </div>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn green">Enviar curriculo</a>
+    </div>
+  </div>
+
     <ul class="sidenav" id="mobile-demo">
         <li><a href="pages/login.html">Entrar</a></li>
-        <li><a href="badges.html">Afiliados</a></li>
-        <li><a href="collapsible.html">Sac</a></li>
-        <li><a href="mobile.html">Promoções</a></li>
+        <li><a href="#modalAfiliados" class="modal-trigger">Parceiros</a></li>
+        <li><a href="pages/chat.html">Sac</a></li>
     </ul>
 
 
@@ -50,16 +160,16 @@
 
                 <ul>
                     <li><a href="pages/login.html">Entrar</a></li>
-                    <li>Afiliados</li>
-                    <li>Sac</li>
-                    <li>Promoções</li>
+                    <li><a href="#modalAfiliados" class="modal-trigger"> Parceiros </a></li>
+                    <li onclick="openChat()">Sac</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div>
-        <div class="slider z-depth-2 hide-on-med-and-down">
+    
+
+        <div class="slider z-depth-2 hide-on-med-and-down" style="z-index: 0;">
             <ul class="slides">
                 <li>
                     <img src="./images/propaganda1.jpeg" style="background-size: cover;">
@@ -98,7 +208,7 @@
             </ul>
         </div>
 
-    </div>
+    
 
 
     <footer class="page-footer">
@@ -126,7 +236,7 @@
                     <h5 class="white-text">Trabalhe conosco</h5>
                     <p>
                         Nossa equipe de desenvolvimento adoraria conhecer um pouco mais sobre você! Envie seu currículo
-                        <a href="#">clicando aqui!</a> <br> Caso você se encaixe no perfil de alguma vaga, nós
+                        <a href="#modalTrabalheConosco" class="modal-trigger blue-text">clicando aqui!</a> <br> Caso você se encaixe no perfil de alguma vaga, nós
                         entraremos em contato!
                     </p>
                 </div>
