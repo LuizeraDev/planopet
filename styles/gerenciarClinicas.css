@@ -1,0 +1,26 @@
+body {
+    overflow-y: hidden;
+}
+.menuSup {
+    background-color: rgba(27, 73, 21, 0.808);
+}
+
+.sideBar {
+    background-color: rgba(226, 226, 226, 0.808);
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content p {
+    font-size: x-large;
+}
+
+.dashboard {
+    margin-top: 20px;
+    width: 15vw;
+    height: 14vh;
+    background-color: rgb(216, 216, 216); 
+    border-radius: 5px;
+    padding-top: 10px;
+}
