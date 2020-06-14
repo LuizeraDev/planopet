@@ -25,15 +25,16 @@
             <a href="#!" class="brand-logo"><img src="./images/logo1.png" id="logo2" alt=""></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="pages/login.html">Entrar</a></li>
+                <li><a href="pages/login.html?tipoconta=on#">Entrar</a></li>
                 <li><a href="#modalAfiliados" class="modal-trigger">Parceiros</a></li>
                 <li><a href="pages/chat.html">Sac</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- CHAT TELA INICIAL -->
     <div id="chat" class="chat z-depth-2 hide-on-med-and-down">
-        <div class="barraSupChat">
+        <div class="barraSupChat" style="padding-top:2.5%;"> 
             <div class="row">
                 <div class="col s1">
                     <div class="online">
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col s9">
-                    PlanoPet
+                    <b>PlanoPet</b>
                 </div>
                 <div class="col s2 right">
                     <a onclick="closeChat()"><i class="material-icons white-text">close</i></a>
@@ -51,13 +52,13 @@
         </div>
         <div class="contentChat">
             <ul>
-                <li class="message messagePlanoPet"><b>PlanoPet</b> <br> Olá, como podemos ajudar?</li>
+                <li class="message messagePlanoPet" style="font-size:20px;"><b>PlanoPet</b> <br> Olá, como podemos ajudar?</li>
             </ul>
         </div>
         <div class="toolsChat">
-            <div class="row">
+            <div class="row" style="margin-top:-5%;">
                 <div class="col s9">
-                    <input type="text" class="browser-default sendMessage" >
+                    <input type="text" class="browser-default sendMessage" style="outline:none;">
                 </div>
                 <div class="col s3">
                     <button class="btn white btn-floating"><i class="material-icons black-text" style="margin-left: 2px;">send</i></button>
@@ -71,6 +72,7 @@
   <div id="modalAfiliados" class="modal">
     <div class="modal-content">
       <h4>Conheça nossos parceiros</h4>
+      <br><br>
       <div class="row">
           <div class="col s12 m4">
               <img src="./images/afiliados1.png" alt="" class="responsive-img" style="max-width: 200px;">
@@ -110,7 +112,7 @@
 
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="background-color: #4CAF50"><b>show de bola!</b></a>
     </div>
   </div>
 
@@ -145,7 +147,7 @@
   </div>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="pages/login.html">Entrar</a></li>
+        <li><a href="pages/login.html?tipoconta=on#">Entrar</a></li>
         <li><a href="#modalAfiliados" class="modal-trigger">Parceiros</a></li>
         <li><a href="pages/chat.html">Sac</a></li>
     </ul>
@@ -159,9 +161,15 @@
             <div class="col s8 menus center">
 
                 <ul>
-                    <li><a href="pages/login.html">Entrar</a></li>
+                    
+                    <div class="menuitens">
+
+                    <li><a href="pages/login.html?tipoconta=on#">Entrar</a></li>
                     <li><a href="#modalAfiliados" class="modal-trigger"> Parceiros </a></li>
                     <li onclick="openChat()">Sac</li>
+
+                    </div>
+
                 </ul>
             </div>
         </div>

@@ -13,7 +13,6 @@
 
 .messagePlanoPet {    
     background-color: rgba(0, 128, 0, 0.548);
-    
 }
 
 .messageUser {
@@ -28,6 +27,7 @@
     margin-top: 7px;
 }
 .barraSupChat {
+    padding-top: 25px;
     background-color: rgba(27, 73, 21, 0.808);
     color: whitesmoke;
 }
@@ -43,6 +43,7 @@
 }
 
 .sendMessage {
+    outline: none;
     width: 220px;
     height: 35px;
     margin-top: 5px;

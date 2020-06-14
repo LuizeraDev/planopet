@@ -1,4 +1,7 @@
-.login-page {
+  body{
+    background-image: url("./../images/wall1.jpg");
+  }
+  .login-page {
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
@@ -82,4 +85,9 @@
   #logo{
       margin: auto;
       display: block;
+  }
+
+  .alinhar{
+    display:block;
+    margin: auto;
   }

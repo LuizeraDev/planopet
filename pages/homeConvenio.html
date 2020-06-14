@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import JqueryMask-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/home.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo1.png" type="image/x-icon">
+
+    <title>Plano Pet - Convênio</title>
+</head>
+
+<body>
+
+    <nav class="menuSup">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">&nbsp;Olá, usuário</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a style="font-size: 20px;" href="#">Gerenciar Perfil</a></li>
+                <li><a style="font-size: 20px;" href="./../index.html">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li onclick="setTela(1)"><a>Consultas pendentes</a></li>
+        <li onclick="setTela(2)"><a>Histórico de consultas</a></li>
+        <li onclick="setTela(3)"><a>Mensagens</a></li>
+        <li onclick="setTela(4)"><a>Planos Atrelados</a></li>
+        <li><hr></li>
+        <li><a href="#">Gerenciar Perfil</a></li>
+        <li><a href="./../index.html">Sair</a></li>
+    </ul>
+
+
+    <div class="row">
+        <div class="col m4 hide-on-med-and-down">
+            <div class="row">
+                <div class="col m6">
+                    <div class="dashboard center hoverable ativo" id="consulta" onclick="setTela(1)">
+                        <h5>Consultas pendentes</h5>
+                        <div class="quantidade">
+                            <div class="qtd">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m6">
+                    <div class="dashboard center-align hoverable" id="historico" onclick="setTela(2)">
+                        <h5>Histórico de consulta</h5>
+                        <div class="quantidade">
+                            <div class="qtd">
+                                23
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div  class="col m6">
+                    <div class="dashboard center hoverable" id="mensagens" onclick="setTela(3)">
+                        <h5>Mensagens</h5>
+                        <div class="quantidade">
+                            <div class="qtd">
+                                9
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m6">
+                    <div class="dashboard center hoverable" id="planos" onclick="setTela(4)">
+                        <h5>Planos Atrelados</h5>
+                        <div class="quantidade">
+                            <div class="qtd">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m8" id="conteudoAtivo">
+
+            <div id="consultasTela" class="container">
+                <h4>Consultas Pendentes</h4>
+                <br>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data da consulta:<b> 23/06/2020</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659741</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>  
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data da consulta:<b> 25/06/2020</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659749</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>   
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data da consulta:<b> 30/06/2020</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659735</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>                 
+                  </ul>
+                  <div class="row center">
+                      <div class="col s6">
+                          <a href="#">Ver Mais</a>
+                      </div>
+                      <div class="col s6">
+                          <a href="#">Cancelar Consulta</a>
+                      </div>
+                  </div>
+            </div>
+
+            <div id="historicoTela" class="container" hidden>
+                <h4>Histórico de Consultas</h4>
+                <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Ordenar por</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                <ul class="collection">
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data de nascimento:<b> 28/01/2010</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659741</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>  
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data de nascimento:<b> 12/11/2019</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659749</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>   
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data de nascimento:<b> 08/04/2016</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659735</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>   
+                    <li class="collection-item">
+                        <div class="row">
+                            <div class="col s5">
+                                <span class="title">Nome do pet: <b>Bernadete</b> </span> <br>
+                                <span class="title">Data de nascimento:<b> 30/05/2014</b> </span>
+                            </div>
+                            <div class="col s5">
+                                <span class="title">Nome do plano: <b>Hometown Pets</b> </span> <br>
+                                <span class="title">Código do pet:<b> 33659735</b> </span>
+                            </div>
+                            <div class="col s2">
+                                <a href="#!" class="secondary-content"><i class="material-icons">close</i></a>
+                            </div>
+                        </div>                      
+                    </li>              
+                  </ul>
+                  <div class="row center">
+                      <div class="col s6">
+                          <a href="#">Ver Mais</a>
+                      </div>
+                      <div class="col s6">
+                          <a href="#">Apagar Tudo</a>
+                      </div>
+                  </div>
+            </div>
+
+            <div id="mensagensTela" class="container" hidden>
+                <h4>Mensagens </h4>
+                <br>
+                    <ul>
+                        <li class="message messagePlanoPet"><b>Hometown Pets</b> <br>Boa tarde, usuário.</li>
+
+                        <li class="message messagePlanoPet"><b>Hometown Pets</b> <br>Você poderia me confirmar um horário para sua consulta no dia 25/06?</li>
+
+                        <li class="message messagePlanoPet"><b>Hometown Pets</b> <br>Nós da Hometown Pets agradecemos o seu contato.</li>
+
+                        <li class="message messagePlanoPet"><b>Hometown Pets</b> <br>Tenha uma boa tarde.</li>
+                    </ul>
+
+
+
+                  <div class="row center">
+                      <div class="col s6">
+                          <a href="#">Ver Mais</a>
+                      </div>
+                      <div class="col s6">
+                          <a href="#">Apagar Tudo</a>
+                      </div>
+                  </div>
+            </div>
+
+            <div id="planosTela" class="container" hidden>
+                <h4>Planos Atrelados</h4>
+                <br>
+                
+                <div class="row">
+                    <div class="col m4 s12 center">
+                        <img src="./../images/afiliados1.png" alt="" class="responsive-img circle" style="max-width: 150px;">
+                        <br>
+                        Hometown Pets <br>
+                        <button class="btn blue">Visualizar</button>
+                        <button class="btn red">Excluir</button>
+                    </div>   
+                </div>
+
+                <br>
+                <div class="center">
+                    <button class="btn green"> Adicionar plano</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./../scripts/home.js"></script>
+
+</body>
+
+</html>
