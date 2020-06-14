@@ -1,5 +1,6 @@
 body {
     background-color: rgb(235, 235, 235);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menuSup {
@@ -44,10 +45,10 @@ body {
 }
 
 .dashboard .qtd {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: white;
     border-radius: 80px;
     width: 32px;
     border: 1px solid black;
     font-size: 20px;
-    
 }
