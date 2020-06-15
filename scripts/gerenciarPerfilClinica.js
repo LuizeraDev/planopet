@@ -26,6 +26,7 @@ function setTela(tela) {
 
             $("#dados").show();
             $("#planos").hide();
+            $("#planos1").hide();
             $("#opcoes").hide();
             break;
         case 2:
@@ -43,6 +44,7 @@ function setTela(tela) {
 
             $("#dados").hide();
             $("#planos").show();
+            $("#planos1").show();
             $("#opcoes").hide();
             break;
         case 3:
@@ -60,6 +62,7 @@ function setTela(tela) {
 
             $("#dados").hide();
             $("#planos").hide();
+            $("#planos1").hide();
             $("#opcoes").show();
             break;
         default:
@@ -77,6 +80,7 @@ function setTela(tela) {
             
             $("#dados").show();
             $("#planos").hide();
+            $("#planos1").hide();
             $("#opcoes").hide();
             break;
     }
